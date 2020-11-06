@@ -16,7 +16,7 @@ If there was one thing I regret most over the course of my studies; it wasn't:
 - That I didn't focus
 - That I didn't spend my summers on internships
 
-What I regret most; is that I didn't show my work. Maybe if I did that, I would've been a lot more ahead in life.
+What I regret most; is that I didn't show my work. Maybe if I did that, I would've been a lot more ahead in life and wouldn't have all those regets that i listed.
 
 > “The person who says he knows what he thinks but cannot express it usually does not know what he thinks.” <br />- Mortimer Adler
 
