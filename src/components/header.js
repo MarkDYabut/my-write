@@ -26,7 +26,7 @@ export default ({ children }) => {
   )
 
   const HeaderCont = styled.div`
-    @media (max-width: 767px) {
+    /* @media (max-width: 767px) {
       .nav-cont {
         position: fixed;
         top: 0;
@@ -61,7 +61,7 @@ export default ({ children }) => {
           font-size: 1.15rem;
         }
       }
-    }
+    } */
 
     .header-cont {
       z-index: 3;
@@ -153,9 +153,9 @@ export default ({ children }) => {
       <div>
         <header className="header-cont">
           <div className="logo-cont">
-            <Link to="/">
+            {/* <Link to="/">
               <img src={Logo} alt={data.site.siteMetadata.title} />
-            </Link>
+            </Link> */}
           </div>
           <nav className="nav-cont">
             <ul>

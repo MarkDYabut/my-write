@@ -75,6 +75,7 @@ export default function Template({ data, pageContext }) {
       <Seo title={frontmatter.title} description={frontmatter.description} />
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
+
         {/* Check if date or author has been declared in MD file
         If so, render the meta */}
         {(frontmatter.date || frontmatter.author) && (
@@ -118,7 +119,7 @@ export default function Template({ data, pageContext }) {
         )}
 
         <Link to="/journal" className="btn-link">
-          <Button text="Return to Journal Home" />
+          <Button text="View All Articles" />
         </Link>
       </div>
     </>

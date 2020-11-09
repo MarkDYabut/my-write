@@ -29,7 +29,7 @@ export default ({ data }) => {
       ))}
       <FeaturedItems>
         <Link to="/journal/">
-          View All {allMarkdownRemark.totalCount} Featured Posts
+          View All {allMarkdownRemark.totalCount} Articles
         </Link>
       </FeaturedItems>
     </>

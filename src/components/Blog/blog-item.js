@@ -90,13 +90,15 @@ const BlogContent = styled.div`
 const BlogList = ({ key, fluid, title, excerpt, path, date, alt }) => {
   return (
     <BlogItem key={key}>
-      <BlogImage>
-        <figure>
-          <Link to={path}>
-            <Img fluid={fluid} alt={alt} />
-          </Link>
-        </figure>
-      </BlogImage>
+      {fluid && (
+        <BlogImage>
+          <figure>
+            <Link to={path}>
+              <Img fluid={fluid} alt={alt} />
+            </Link>
+          </figure>
+        </BlogImage>
+      )}
       <BlogTitle>
         <Link to={path}>
           <h2>{title}</h2>
