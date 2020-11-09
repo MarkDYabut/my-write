@@ -98,6 +98,7 @@ export default function Template({ data, pageContext }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <hr />
+
         {next && (
           <>
             <Link to={next.frontmatter.path} className="btn-link">
@@ -106,9 +107,10 @@ export default function Template({ data, pageContext }) {
             <br />
           </>
         )}
+
         {prev && (
           <>
-            <Link to={prev.frontmatter.path}>
+            <Link to={prev.frontmatter.path} className="btn-link">
               <Button text="Previous Article" />
             </Link>
             <br />
