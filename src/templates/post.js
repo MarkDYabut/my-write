@@ -61,7 +61,11 @@ const PostedTitle = styled.h4`
   }
 `
 
-export default function Template({ data }) {
+export default function Template({ data, pageContext }) {
+  const { next, prev } = pageContext
+  console.log(prev)
+  console.log(next)
+
   let location = useLocation()
   const { markdownRemark } = data // Object destructuring
   const { frontmatter, html } = markdownRemark // Object destructuring og markdownRemark
@@ -73,7 +77,6 @@ export default function Template({ data }) {
       <Seo title={frontmatter.title} description={frontmatter.description} />
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
-
         {/* Check if date or author has been declared in MD file
         If so, render the meta */}
         {(frontmatter.date || frontmatter.author) && (
@@ -86,7 +89,6 @@ export default function Template({ data }) {
             </h2>
           </PostMeta>
         )}
-
         {/* If featured image is present, render featured image */}
         {featuredImgFluid && (
           <PostImage>
@@ -98,6 +100,23 @@ export default function Template({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <hr />
+        {next && (
+          <>
+            <Link to={next.frontmatter.path} className="btn-link">
+              <Button text="Next Article" />
+            </Link>
+            <br />
+          </>
+        )}
+        {prev && (
+          <>
+            <Link to={prev.frontmatter.path}>
+              <Button text="Previous Article" />
+            </Link>
+            <br />
+          </>
+        )}
+
         <Link to="/journal" className="btn-link">
           <Button text="Return to Journal Home" />
         </Link>
