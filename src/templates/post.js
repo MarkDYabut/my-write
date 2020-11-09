@@ -63,8 +63,6 @@ const PostedTitle = styled.h4`
 
 export default function Template({ data, pageContext }) {
   const { next, prev } = pageContext
-  console.log(prev)
-  console.log(next)
 
   let location = useLocation()
   const { markdownRemark } = data // Object destructuring
