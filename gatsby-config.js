@@ -39,9 +39,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     // `gatsby-plugin-offline`,
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-NFT3MFB",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "ENTER YOUR GA TRACKING ID HERE",
+        trackingId: "UA-176069437-4",
         head: false,
       },
     },

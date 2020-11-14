@@ -14,7 +14,7 @@ export default ({ data }) => {
   return (
     <>
       {/* <Seo /> */}
-      <h1>Focus</h1>
+      <h1>Write</h1>
       <p> A collection of thoughts</p>
       {allMarkdownRemark.edges.map(({ node }) => (
         <BlogItem
